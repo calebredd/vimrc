@@ -50,12 +50,15 @@ set t_Co=256
 set scrolloff=5
 set cmdheight=2
 set history=1000
+set undolevels=1000
 cnoreabbrev vex :Vexplore!  
 cnoreabbrev te :Texplore  
 cnoreabbrev tex :Texplore  
 imap jk <ESC>
 imap kj <ESC>
 imap ii <ESC>
+nnoremap B ^
+nnoremap E $
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 let g:lightline={
