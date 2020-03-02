@@ -24,7 +24,10 @@ call vundle#end()
 filetype plugin indent on
 
 syntax enable
-colorscheme molokai
+colorscheme dracula
+set mouse=a
+set paste
+set clipboard=unnamed
 set autoread
 set autoindent
 set smartindent
@@ -55,7 +58,6 @@ cnoreabbrev vex :Vexplore!
 cnoreabbrev te :Texplore  
 cnoreabbrev tex :Texplore  
 imap jk <ESC>
-imap kj <ESC>
 imap ii <ESC>
 nnoremap B ^
 nnoremap E $
@@ -68,7 +70,7 @@ let g:rainbow_active=1
 let g:indent_guides_guide_size=1
 let g:indent_guides_color_change_percent = 1
 let g:indent_guides_enable_on_vim_startup = 1
-set directory=~/.vim/swap-files,/ `/tmp,.
+set directory=~/.vim/tmp//
 autocmd! bufwritepost .vimrc source %
 autocmd VimEnter * :so $MYVIMRC
 let g:netrw_banner = 0
