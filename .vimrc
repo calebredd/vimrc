@@ -18,7 +18,8 @@ Plugin 'modess/vim-phpcolors'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'calebredd/Tabmerge'
-
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 call vundle#end()
 
 filetype plugin indent on
